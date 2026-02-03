@@ -1,0 +1,22 @@
+{
+    "AuthenticationConfiguration": {
+        "ConnectionArn": "arn:aws:apprunner:us-east-1:365202715860:connection/BELLALAJASWANTH/145ab1b846f640408ff98f3dc4990e10"
+    },
+    "AutoDeploymentsEnabled": true,
+    "CodeRepository": {
+        "RepositoryUrl": "https://github.com/jaswanth3132/bookmyshow-clone",
+        "SourceCodeVersion": {
+            "Type": "BRANCH",
+            "Value": "master"
+        },
+        "CodeConfiguration": {
+            "ConfigurationSource": "API",
+            "CodeConfigurationValues": {
+                "Runtime": "NODEJS_22",
+                "BuildCommand": "npm ci --include=dev && npm run build",
+                "StartCommand": "npm start",
+                "Port": "3000"
+            }
+        }
+    }
+}
