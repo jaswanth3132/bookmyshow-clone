@@ -10,13 +10,7 @@
             "Value": "master"
         },
         "CodeConfiguration": {
-            "ConfigurationSource": "API",
-            "CodeConfigurationValues": {
-                "Runtime": "NODEJS_22",
-                "BuildCommand": "npm ci --include=dev && npm run build",
-                "StartCommand": "npm start",
-                "Port": "3000"
-            }
+            "ConfigurationSource": "REPOSITORY"
         }
     }
 }
